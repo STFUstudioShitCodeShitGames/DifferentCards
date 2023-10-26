@@ -67,9 +67,9 @@ public class Galava : MonoBehaviour
     private IEnumerator HikTuk()
     {
         var hjkl = 60;
+        _jumba.SetText($"Time: {hjkl} sec");
         while (hjkl > 0)
         {
-            
             yield return new WaitForSecondsRealtime(1f);
             hjkl--;
             _jumba.SetText($"Time: {hjkl} sec");
